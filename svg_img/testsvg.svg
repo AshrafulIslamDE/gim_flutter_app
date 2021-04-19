@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="78"
+    height="80"
+    viewBox="0 0 78 80">
+    <path
+        fill="#A8A8A8"
+        fill-rule="evenodd"
+        d="M58.286,6H19.714C15.452,6 12,9.43 12,13.667V75l27,-11.5L66,75V13.667C66,9.412 62.529,6 58.286,6M59,63l-19.5,-8.217L20,63V14h39" />
+</svg>

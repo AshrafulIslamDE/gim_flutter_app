@@ -1,0 +1,92 @@
+import 'dart:async';
+
+import 'package:customer/ui/webview/webview_bloc.dart';
+import 'package:customer/ui/widget/app_bar.dart';
+import 'package:customer/flavor/flavor_config.dart';
+import 'package:customer/ui/widget/base_widget.dart';
+import 'package:customer/ui/widget/caller_layout.dart';
+import 'package:customer/utils/ui_utils.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+
+class WebRedirectionScreen extends StatelessWidget{
+  final String webViewUrl;
+  final title;
+  const WebRedirectionScreen({Key key, this.webViewUrl, this.title}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider<WebviewBloc>(create:(context)=>WebviewBloc(),
+    child:WebRedirectionPage(webViewUrl: webViewUrl,title: title,) ,
+    );
+  }
+
+}
+class WebRedirectionPage extends StatefulWidget{
+  final String webViewUrl;
+  final title;
+  const WebRedirectionPage({Key key, this.webViewUrl, this.title}) : super(key: key);
+
+  @override
+  _WebRedirectionScreenState createState() => _WebRedirectionScreenState();
+}
+
+class _WebRedirectionScreenState extends BasePageWidgetState<WebRedirectionPage,WebviewBloc> {
+  //WebViewController _controller;
+  bool shoudlShowLoader=true;
+  onPageFinished(){
+    Future.delayed(const Duration(milliseconds: 500), () {
+      if(mounted)
+        setState(() {
+          shoudlShowLoader=false;
+        });
+
+    });
+
+  }
+  @override
+  void initState() {
+    super.initState();
+    bloc.orginalUrl=FlavorConfig.instance.values.baseUrl+widget.webViewUrl;
+
+  }
+  @override
+  onBuildCompleted() {
+    bloc.checkInternet();
+    bloc.url=FlavorConfig.instance.values.baseUrl+widget.webViewUrl;
+  }
+
+  @override
+  List<Widget> getPageWidget() {
+   return [
+     Consumer<WebviewBloc>(
+       builder:(context,bloc,_)=> WebView(
+         initialUrl: bloc.url,
+         javascriptMode: JavascriptMode.unrestricted,
+         onPageFinished:(url)=> bloc.onPageFinished(),
+
+
+       ),
+     ),
+     showLoader<WebviewBloc>(bloc) ,
+     Positioned(bottom:1,right: 10,child: CallerWidget(autoAlignment: false,)),
+
+   ];
+  }
+
+  @override
+  PreferredSizeWidget getAppbar() {
+    return AppBarWidget(title: widget.title,);
+  }
+
+@override
+onRetryClick() {
+  bloc.checkInternet();
+  return super.onRetryClick();
+  }
+
+}
+
+
+

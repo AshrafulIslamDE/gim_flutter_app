@@ -1,0 +1,76 @@
+import 'package:customer/core/localization/AppTranslation.dart';
+import 'package:customer/ui/bid/view_bid_list.dart';
+import 'package:customer/ui/trip/widget/trip_adress_info.dart';
+import 'package:customer/ui/trip/widget/trip_goods_type.dart';
+import 'package:customer/ui/trip/widget/trip_truck_info.dart';
+import 'package:customer/ui/widget/app_button.dart';
+import 'package:customer/model/trip/trip.dart';
+import 'package:customer/ui/widget/base_widget.dart';
+import 'package:customer/ui/widget/listview_shape.dart';
+import 'package:customer/ui/widget/navigation_utils.dart';
+import 'package:customer/utils/app_data_ui_utils.dart';
+import 'package:customer/utils/screen_dimension_utils.dart';
+import 'package:customer/utils/ui_constant.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class ItemBidReceivedTrip extends BaseItemView<TripItem> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      color: (position+1)%2==0? ColorResource.white_gray:ColorResource.colorWhite,
+      /* foregroundDecoration: BoxDecoration(
+        shape: BoxShape.rectangle,
+        color: ColorResource.warm_grey
+      ),*/
+      child: InkWell(
+        onTap: () => onItemClick(item),
+        child: Stack(
+          children: <Widget>[
+            getLeftSideShape(),
+            getRightSideShape(),
+            Padding(
+              padding: const EdgeInsets.only(left:18.0,right: 18.0,top: 10,bottom: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                      padding: const EdgeInsets.only(left:28.0,top: 0),
+                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Row(
+                              children: <Widget>[
+                                Text(AppTranslations.of(context).text('txt_trip_no').toUpperCase()+localize('number_count',dynamicValue: item.tripNumber.toString()),
+                                  style: TextStyle(color: ColorResource.warm_grey,
+                                      fontSize: responsiveTextSize(12),
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: 'roboto'),
+                                ),
+                                setDistributorTagVisibility(item)
+                              ],
+                            ),
+                            CustomButton(text: translate(context, 'number_count',dynamicValue: item.totalNoOfBids.toString())+translate(context, 'bid'),
+                              drawablePadding:15.0 ,
+                              suffixIcon: Icons.arrow_forward_ios,
+                              onPressed: (){navigateNextScreen(context, ViewBidListScreen( item));},
+                            )
+                          ])),
+                  SizedBox(
+                    height: 0,
+                  ),
+                  TripAddressInfoWidget(item),
+                  TripGoodsTypeWidget(item),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  TruckInfoWidget(item)
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

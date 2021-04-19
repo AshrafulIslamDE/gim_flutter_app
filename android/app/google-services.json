@@ -1,0 +1,163 @@
+{
+  "project_info": {
+    "project_number": "131328576110",
+    "firebase_url": "https://ejogajog-gim.firebaseio.com",
+    "project_id": "ejogajog-gim",
+    "storage_bucket": "ejogajog-gim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131328576110:android:fae2e1561e44d0f3",
+        "android_client_info": {
+          "package_name": "com.ejogajog.fleetowner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg_vhbK1URhQj9NkWV57KeLzjUCEW7Hlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "131328576110-tvi4u9qnccphdp88vcp9aorrmubk6tmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ejogajog.serviceseeker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131328576110:android:2bbce977551f2f59",
+        "android_client_info": {
+          "package_name": "com.ejogajog.serviceseeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131328576110-kdbgp4f65c2nrvb135r6o72lrd2bi1u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ejogajog.serviceseeker",
+            "certificate_hash": "567fad6e69d1a47ebaa0aea743c52f53512fbb71"
+          }
+        },
+        {
+          "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg_vhbK1URhQj9NkWV57KeLzjUCEW7Hlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "131328576110-tvi4u9qnccphdp88vcp9aorrmubk6tmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ejogajog.serviceseeker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131328576110:android:9dd2915eb3bf9d3a",
+        "android_client_info": {
+          "package_name": "com.ejogajog.truckdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg_vhbK1URhQj9NkWV57KeLzjUCEW7Hlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "131328576110-tvi4u9qnccphdp88vcp9aorrmubk6tmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ejogajog.serviceseeker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131328576110:android:9dd2915eb3bf9d3a",
+        "android_client_info": {
+          "package_name": "com.gim.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg_vhbK1URhQj9NkWV57KeLzjUCEW7Hlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131328576110-2nhk41k636bci3oi5mbpa4tl9dkeg5dg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "131328576110-tvi4u9qnccphdp88vcp9aorrmubk6tmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gim.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

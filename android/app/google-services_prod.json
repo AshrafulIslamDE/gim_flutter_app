@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "394716763601",
+    "firebase_url": "https://ejogajog-gim-prod.firebaseio.com",
+    "project_id": "ejogajog-gim-prod",
+    "storage_bucket": "ejogajog-gim-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394716763601:android:4d1894f7ae4139ee",
+        "android_client_info": {
+          "package_name": "com.gim.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394716763601-0tp02rao4vktda4kmu7bhn5uma2v1oa5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gim.customer",
+            "certificate_hash": "33819fae7afa7e1350692da88d3f2583c239b446"
+          }
+        },
+        {
+          "client_id": "394716763601-u659u9jiphc44u59r9hooupv2061t1go.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gim.customer",
+            "certificate_hash": "5152b4a762c2871aded40d6bed92a8dad189a3a0"
+          }
+        },
+        {
+          "client_id": "394716763601-eiclisb0tjpsau86uaa90m6c1oo5r0d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5eoutEPXPK9s07jsyhi5_E-FZP9IEQZE"
+        },
+        {
+          "current_key": "AIzaSyAWom2xxgjkM2fIk4aya5mUzI8_bzQJfUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394716763601-eiclisb0tjpsau86uaa90m6c1oo5r0d7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "394716763601-0a08m3aqs64bl2pbvjamjpedit6m4nou.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gim.customer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394716763601:android:44f87da6e7b85360",
+        "android_client_info": {
+          "package_name": "com.gim.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394716763601-h8fq46o92tdja30dsub6ke2bofj3hphm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gim.partner",
+            "certificate_hash": "42deaa24c7f315c9ed5825cb93784c5ea272af27"
+          }
+        },
+        {
+          "client_id": "394716763601-c3q8tibmp6lor1a7ml48mqe06n9o224m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gim.partner",
+            "certificate_hash": "5152b4a762c2871aded40d6bed92a8dad189a3a0"
+          }
+        },
+        {
+          "client_id": "394716763601-eiclisb0tjpsau86uaa90m6c1oo5r0d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5eoutEPXPK9s07jsyhi5_E-FZP9IEQZE"
+        },
+        {
+          "current_key": "AIzaSyAWom2xxgjkM2fIk4aya5mUzI8_bzQJfUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394716763601-eiclisb0tjpsau86uaa90m6c1oo5r0d7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "394716763601-0a08m3aqs64bl2pbvjamjpedit6m4nou.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gim.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
